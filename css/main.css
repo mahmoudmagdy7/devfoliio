@@ -1,0 +1,196 @@
+header {
+  background-image: url(../images/1.jpeg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+}
+main {
+  background-color: #f5f5f5 !important;
+}
+nav .container a {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 0 !important;
+  position: relative;
+}
+nav .container a:hover {
+  color: #fff;
+}
+
+nav .navbar-nav a:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  transition: 0.5s;
+}
+nav .navbar-nav a:hover:after,
+nav .navbar-nav a:first-child:after {
+  width: 50%;
+}
+
+.overlay {
+  background-color: rgb(0, 0, 0, 0.6);
+  inset: 0;
+}
+header .overlay h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+header .overlay h1:after {
+  font-size: 2.8rem;
+  content: "Web Devloper";
+  position: absolute;
+  bottom: -100;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/* ======================= section about ======================= */
+
+#services .card:hover span {
+  background-color: #0078ff;
+  color: #fff;
+  border-color: #acd3ff !important;
+  transition: 0.5s;
+}
+#services .working {
+  /* height: 45vh; */
+  background-image: linear-gradient(#0077ffa5, #0077ffa5),
+    url(../images/sec-bg-2-mod.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* ======================= section about ======================= */
+
+/* ======================= porfolio ======================= */
+
+#Portfolio .main .image img {
+  transition: 0.5s;
+}
+#Portfolio .main:hover .image img {
+  transform: scale(1.1);
+}
+/* ======================= porfolio ======================= */
+
+/* ======================= blog =======================*/
+#blog .card-footer img {
+  height: 30px;
+}
+#blog .card a:hover {
+  color: #0078ff !important;
+  transition: 0.5s;
+}
+#blog .card-body::after {
+  position: absolute;
+  content: "Web Design";
+  color: #fff;
+  left: 50%;
+  top: 0;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+  background-color: #0078ff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+#blog .card:nth-child(1) .card-body::after {
+  content: "TRAVEL" !important;
+}
+
+.testimonials svg {
+  margin-bottom: 15px;
+}
+.testimonials {
+  /* height: 80vh; */
+  background-image: linear-gradient(#0077ffa5, #0077ffa5),
+    url(../images/bg-2.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.testimonials .carousel-inner {
+  height: 45vh !important;
+}
+/* ======================= blog =======================*/
+
+/* ======================= footer =======================*/
+footer {
+  background-image: linear-gradient(#0077ffa5, #0077ffa5),
+    url(../images/bg-2.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 8.6rem 0 2rem;
+}
+
+/* ======================= footer =======================*/
+
+/* ======================= changeing nav bg and enhance it =======================*/
+@media screen and (max-width: 992px) {
+  header .overlay h1 {
+    font-size: 3rem !important;
+  }
+  header .overlay h1:after {
+    font-size: 1.5rem;
+    bottom: -50;
+  }
+
+  nav {
+    background-color: #fff;
+  }
+
+  nav .container a,
+  nav .container a:hover {
+    color: #0078ff;
+    display: inline-block;
+  }
+  nav .container a:after {
+    background-color: #0078ff;
+  }
+  nav .navbar-nav a:hover:after,
+  nav .navbar-nav a:first-child:after {
+    width: 8%;
+  }
+  .testimonials .carousel-inner {
+    height: 55vh !important;
+  }
+}
+/* ======================= changeing nav bg and enhance it =======================*/
+
+/* ====================== Components =======================*/
+.heading-component span {
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+.title-component:after {
+  content: "";
+  height: 3px;
+  background-color: #0078ff;
+  width: 75%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.social-icons svg {
+  /* icons convert to svg because of fontawesom js file */
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.carousel-indicators .active {
+  background-color: #000 !important;
+  transition: 0.5s;
+  height: 8px;
+}
+.carousel-indicators button:not(.active) {
+  width: 1em;
+  height: 8px;
+
+  background-color: #fff !important;
+}
+/* ====================== Components =======================*/ ;
